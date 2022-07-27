@@ -15,12 +15,14 @@ class CompilerDesign extends StatelessWidget{
           ), 
           ),
         ),
-        body: MaterialButton(onPressed: () {
+        body: Center(child: 
+        MaterialButton(onPressed: () {
           Navigator.pushReplacement(context, 
                 MaterialPageRoute(builder: (context) => PdfViewer()),
           );
         },
         child: Text('Course Outline'),
+        ),
         ),
     );
   }

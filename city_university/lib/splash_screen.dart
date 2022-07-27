@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget{
     backgroundColor: Colors.green.shade100,
      nextScreen: Home(),
      splashIconSize: 250,
-     duration: 1500,
+     duration: 1000,
     
      
      );
