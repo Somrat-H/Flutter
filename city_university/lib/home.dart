@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:city_university/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -51,7 +53,7 @@ class Home extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Image.asset(
                       ur,
-                      fit: BoxFit.contain,
+                      fit: BoxFit.fill,
                     ),
                   ),
               ],
@@ -103,7 +105,7 @@ class Home extends StatelessWidget {
                       height: 100,
                       color: Colors.white,
                       child: const Text(
-                          'Professor Dr. Md. Shah-E-Alam\nVice-Chancellor'),
+                          'Professor Dr. Md. Shah-E-Alam\nVice-Chancellor', ),
                     ),
                   ),
                 ),
@@ -133,55 +135,55 @@ class Home extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       height: 100,
-                      color: Colors.white,
-                      child: const Text('Md_Safaet_Hossain\nHOD, Computer Science & Engineering'),
+                      child: const Text('Md Safaet Hossain\nHOD, Computer Science & Engineering', 
+                      style: TextStyle(fontSize: 15),),
                     ),
                   ),
                 ),
               ],
             ),
             const SizedBox(
-              height: 20,
+              height: 50,
             ),
-            Container(
-              color: Colors.cyan.shade200,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                color: Colors.cyan.shade200,
-                child: Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 100,
-                      child: const Text(
-                          'City Campus\n13/A, Panthapath, Dhaka-1215\nCell: +8801819813111, +8801778149097\nTel: 44819070, 44819050\nadmin@cityuniversity.edu.bd'),
-                    ),
+           Container(
+            color: Colors.pink.shade100,
+           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Flexible(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    child: const Text(
+                        'City Campus\n13/A, Panthapath, Dhaka-1215\nCell: +8801819813111, +8801778149097\nTel: 44819070, 44819050\nadmin@cityuniversity.edu.bd'),
                   ),
                 ),
-                ),
-                Container(
-                  color: Colors.cyan.shade200,
-                 child: Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 100,
-                      child: const Text(
-                          'Permanent Campus\nkhagan, Birulia, Savar, Dhaka-1216,Bangladesh\nCell: +880 1854-640476+880 1862-213214'),
-                    ),
+              ),
+              Flexible(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    child: const Text(
+                        'Permanent Campus\nkhagan, Birulia, Savar, Dhaka-1216,Bangladesh\nCell: +880 1854-640476+880 1862-213214'),
                   ),
                 ),
-                ),
-            
-              ],
-            )
-            )
-
-          ],
-        ),
+              ),
+            ],
+          ),
+        )
+        ],
+  
       ),
+          
+                ),
+                );
+  
+            
+            
+  }
+}
       // bottomNavigationBar: Column(
       //   children: [
       //     Row(
@@ -213,6 +215,3 @@ class Home extends StatelessWidget {
       //     ),
       //   ],
       // ),
-    );
-  }
-}
